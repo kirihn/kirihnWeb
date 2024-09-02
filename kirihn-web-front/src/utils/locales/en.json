@@ -1,0 +1,11 @@
+{
+    "nav": {
+        "main": "Main",
+        "contacts": "Contacts",
+        "projects": "Projects",
+        "links": "Links",
+        "logIn": "Log In",
+        "signOut": "Sign Out",
+        "other": "Other"
+    }
+}

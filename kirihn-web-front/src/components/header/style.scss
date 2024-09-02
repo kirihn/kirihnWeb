@@ -1,0 +1,46 @@
+@import '../../styles/varibles';
+
+.headerContainer{
+    @extend %parrentContainer;    
+    background: $mainColor;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    .navContainer{
+        @extend %chieldContainer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .Logo{
+            height: 60px;
+            align-items: center;
+        }
+
+        .navUl{
+            list-style-type: none;
+            display: flex;
+            margin-left: -150px;
+
+            .navLi{
+                @extend %middleContent;
+                @include shadowEffect($mainLigthColor, $mainDarkColor);
+                
+                background: $mainColor;
+                border-radius: 10px;
+                margin: 10px;
+                width: 120px;
+                height: 40px;
+
+                color: $mainTextColor;
+                font-size: 20px;
+            }
+        }
+
+        .AuthButton{
+            color: $mainTextColor;
+            font-size: 20px;
+        }  
+    }
+}

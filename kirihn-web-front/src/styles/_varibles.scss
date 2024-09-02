@@ -1,0 +1,25 @@
+$mainColor: #8DC1D2;
+$mainLigthColor: #9BD6E9;
+$mainDarkColor: #7CA3B0;
+$mainTextColor: #33535f;
+$mainWidth: 1400px;
+
+%parrentContainer {
+    width: 100%;
+}
+
+%chieldContainer{
+    width: 1400px;
+    margin: auto;
+}
+
+%middleContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin shadowEffect($ligthColor, $darkColor){
+    box-shadow: 5px 5px 15px $darkColor,
+                -5px -5px 15px $ligthColor; 
+}
